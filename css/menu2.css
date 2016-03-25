@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+{
+  margin:0;
+  padding:0;
+}
+body {
+  min-width: 680px;
+  background: #999; 
+  padding:10px;
+}
+
+#cabecera {
+  background: #eee;
+  margin: -10px 0px 0px 0px;
+}
+
+#titulo {
+  height:35px; /*ojo aqui*/
+  background:#00BFFF; /*#ccc; (DCDCDC --> color gris de cabecera) */
+  
+}
+
+div#menu {
+  background: #4169E1; /*#036; (228B22 --> color verde) */
+  float: left;
+  /*opacity: 0.80;  /*efecto de transparencia*/
+  width: 100%;
+  font-family:Arial;
+  font-size:1.3em;
+  
+}
+
+div#menu li {
+   float:left;       
+   position:relative;       
+   list-style-type:none;
+   margin: -4px 0px 0px 0px;
+}
+
+div#menu a {
+  display:block;        
+  text-decoration:none;        
+  color:#069;     
+  padding: 4px 18px;      
+  background: #4169E1; /*#036; (228B22 --> color verde) */
+   color: #fff;
+   margin: -14px 0px 0px 0px;
+}
+
+div#menu a:hover {
+  color: #000;
+  background: #DCDCDC; /*#69C; (DCDCDC --> color gris de fondo) */
+  margin: -14px 0px 0px 0px;
+}
+   
+div#menu ul li ul {
+   position:absolute;       
+   width:12em;
+   margin: 0px 0px 0px -40px;
+}
+
+div#menu ul li ul li {
+   width:100%;        
+   /*border-bottom:1px solid #000000; /*#069;*/
+   margin: 15px 0px 0px 0px; 
+}
+
+body div#menu ul li ul {
+  display:none;
+  
+}
+
+div#menu ul li:hover ul, div#menu ul li ul:hover {
+  display:block;
+  
+}

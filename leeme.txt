@@ -1,0 +1,44 @@
+//DATOS DEL PROGRAMA==================================
+	$CLIENTE 	= "INCES" ;
+	$SISTEMA 	= "- Sistema De Inventario - " ;
+	$VERSION 	= "Version 1.0" ;
+	$DB 		= "MySql"
+	$LENGUAGE 	= "PHP5"
+	$NICK 		= "Por @ArturoGnuxdar" ;
+//====================================================
+
+Proyecto en CSS, PHP Y MYSQL 
+para manejo de inventario, manejo de clientes, llevar un control de movimientos.
+
+su instalacion es muy sencilla en cualquier servidor apache y que maneje PHP Y MYSQL solo es
+copiar la carpeta Compu-Soft en la raiz del servidor, en la carpeta www'en el caso de GNU/Linux
+y luego para iniciar se debe abrir el navegador Firefox.
+
+para ingresar al sistema una vez este instalado debes copiar la siguiente ruta en el 
+navegador http://localhost/Compu-Soft/index.php donde deberas ingresar los datos correctos
+para ingresar al sistema en este caso usuario: admin y password: admin o usuario:gnuxdar y password:123
+tambien se debe modificar el archivo llamado conectar.php que se encuentra en la carpeta
+Compu-Soft ahi se debe colocar los datos necesarios para conectar con la base de datos en
+mi caso la BD se llama "compu" recuerda que si se modifica el nombre de la BD se afectara
+el funcionamiento de algunos archivos y estos se deberan modificar tambien, el resto de 
+datos como el nombre del servidor, nombre de usuario y password de la BD se pueden modificar sin
+problema.
+
+igualmente se debe configurar el archivo backup.php que se encuentra dentro de la carpeta
+Compu-Soft/Backup para poder hacer los respaldos de la BD.
+
+por ultimo dentro de la carpeta Compu-Soft va un archivo llamado backup_compusoft ya listo
+para crear la BD y sus respectivas tablas si se realiza algun tipo de modificacion a las
+tablas por razones obvias se deben modificar algunos archivos de la aplicacion.
+
+usuario: admin y password: admin o usuario:gnuxdar y password:123
+
+suerte.
+
+cualquier duda o inconveniente con la app, no dude en escribir a mi twitter
+@ArturoGnuxdar o a mi correo gnuxdar@gmail.com.
+
+o tan solo para agradecer si le servicio de guia o ayuda.
+
+Enjoy!
+

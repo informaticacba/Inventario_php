@@ -1,0 +1,114 @@
+# +===================================================================
+# |
+# | Generado el 24-11-2015 a las 12:11:14 PM 
+# | Servidor: 127.0.0.1
+# | MySQL Version: 5.5.44-0+deb7u1
+# | PHP Version: 5.4.44-0+deb7u1
+# | Base de datos: 'compu'
+# | Tablas: [0] => configuracion;  [1] => registro;  [2] => reporte;  [3] => users
+# |
+# +-------------------------------------------------------------------
+
+# | Vaciado de tabla 'configuracion'
+# +------------------------------------->
+# No especificado.
+
+
+# | Estructura de la tabla 'configuracion'
+# +------------------------------------->
+CREATE TABLE `configuracion` (
+  `id_tipo` int(10) NOT NULL AUTO_INCREMENT,
+  `nombre_tipo` varchar(30) NOT NULL,
+  PRIMARY KEY (`id_tipo`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+
+
+# | Carga de datos de la tabla 'configuracion'
+# +------------------------------------->
+INSERT INTO `configuracion` VALUES ('17', 'Paquete');
+INSERT INTO `configuracion` VALUES ('18', 'Cajas');
+INSERT INTO `configuracion` VALUES ('19', 'Rollo');
+INSERT INTO `configuracion` VALUES ('20', 'Plastico');
+INSERT INTO `configuracion` VALUES ('21', 'Caucho');
+
+
+# | Vaciado de tabla 'registro'
+# +------------------------------------->
+# No especificado.
+
+
+# | Estructura de la tabla 'registro'
+# +------------------------------------->
+CREATE TABLE `registro` (
+  `tipo` varchar(40) NOT NULL,
+  `descripcion` varchar(30) NOT NULL,
+  `obser` varchar(30) NOT NULL,
+  `unidades` bigint(10) NOT NULL,
+  `des` varchar(40) NOT NULL,
+  `fecha` datetime NOT NULL,
+  `serial` varchar(100) NOT NULL,
+  `cliente` varchar(40) NOT NULL,
+  PRIMARY KEY (`serial`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+# | Carga de datos de la tabla 'registro'
+# +------------------------------------->
+INSERT INTO `registro` VALUES ('Cajas', 'Pirreli', 'pistas', '21000', '', '2015-11-14 05:08:27', '5647a9f09ca3a', '');
+INSERT INTO `registro` VALUES ('Rollo', 'Papel', 'Toales', '90', '', '2015-11-14 00:00:00', '56477f928e7c6', '');
+INSERT INTO `registro` VALUES ('Caucho', 'Pireli', 'De Moto', '10', '', '2015-11-14 06:40:33', '5647bf7c8a92d', '');
+INSERT INTO `registro` VALUES ('Cajas', 'Billete', 'euros', '99', '', '2015-11-14 04:59:12', '5647a994e3434', '');
+INSERT INTO `registro` VALUES ('Cajas', 'Pantalones', 'Vagos', '99', '', '2015-11-14 04:52:08', '5647a72e5c6c4', '');
+INSERT INTO `registro` VALUES ('Cajas', 'Zapatos', 'gomas', '200', '', '2015-11-14 05:08:57', '5647aa5a40c2b', '');
+
+
+# | Vaciado de tabla 'reporte'
+# +------------------------------------->
+# No especificado.
+
+
+# | Estructura de la tabla 'reporte'
+# +------------------------------------->
+CREATE TABLE `reporte` (
+  `mov_id` int(10) NOT NULL AUTO_INCREMENT,
+  `tipo_m` varchar(20) NOT NULL,
+  `compu_unidades` bigint(20) NOT NULL,
+  `compu_fecha` date NOT NULL,
+  `compu_cli` varchar(30) NOT NULL,
+  `compu_observacion` varchar(30) NOT NULL,
+  `compu_tipo` varchar(20) NOT NULL,
+  `compu_des` varchar(30) NOT NULL,
+  PRIMARY KEY (`mov_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=140 DEFAULT CHARSET=utf8;
+
+
+# | Carga de datos de la tabla 'reporte'
+# +------------------------------------->
+INSERT INTO `reporte` VALUES ('137', 'Salida', '1', '2015-11-14', 'Bruna', 'Mercado', 'Cajas', 'Pantalones');
+INSERT INTO `reporte` VALUES ('138', 'Salida', '1', '2015-11-14', 'Fran', 'Tio', 'Cajas', 'Billete');
+INSERT INTO `reporte` VALUES ('139', 'Salida', '1', '2015-11-14', '1', '1', 'Cajas', 'Billete');
+INSERT INTO `reporte` VALUES ('134', 'Salida', '1', '2015-11-14', 'Adrian', 'Regala', 'Cajas', 'Zapatos');
+
+
+# | Vaciado de tabla 'users'
+# +------------------------------------->
+# No especificado.
+
+
+# | Estructura de la tabla 'users'
+# +------------------------------------->
+CREATE TABLE `users` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+
+# | Carga de datos de la tabla 'users'
+# +------------------------------------->
+INSERT INTO `users` VALUES ('2', 'admin', 'admin');
+INSERT INTO `users` VALUES ('3', 'gnuxdar', '123');
+
+ 
+

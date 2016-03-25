@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #DCDCDC;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+#formulario {
+	margin: 0 auto;
+	width: 400px;
+}
+
+#formulario fieldset {
+	border: 1px solid #228B22;
+	display: block;
+}
+
+#formulario legend {
+	font-weight: bolder;
+	font-size: 18px;
+	padding: 0 5px;
+}
+
+#formulario label {
+	float: left;
+	display: block;
+	margin: 10px -30px 30px 85px;
+}
+
+#formulario input, #formulario select {
+	display: block;
+	width: 220px;
+}
+
+#formulario input.uno {
+	width: 120px;
+	float: left;
+	margin: 10px 20px 10px 60px;
+     /*margin: 20px auto;*/
+}
+
+#formulario input.dos {
+	width: 100px;
+	float: left;
+	margin: 20px -20px 20px -190px;
+     /*margin: 20px auto;*/
+}
+
+br {
+	clear: left;
+}
+
